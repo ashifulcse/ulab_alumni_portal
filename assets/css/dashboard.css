@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+/* @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css'); */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+body {
+    background-color: rgba(0,113,189, 0.15);
+    font-family: 'Federo', sans-serif;
+    background: url('../images//bg/1.jpg');
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    margin: 0;  
+}
+
+.main_body { 
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgb(233 246 255);
+} 
+
+.navbar_div {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0 5%;
+    box-shadow: 0px 10px 10px -15px #111;  
+}
+.navbar_div ul {
+    list-style-type: none; 
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    text-align: left;
+  }
+
+  .logo_li {
+    float: left;
+  }
+  .logo_li a {
+    padding: 16px 0 0px 0;
+    position: absolute;
+  }
+  .logo_li img {
+    width: 140px;
+  }
+   
+  
+  li a {
+    display: block;
+    color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #04AA6D;
+  } 

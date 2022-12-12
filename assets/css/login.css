@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap'); 
+
+/*  Common css */
+.my-1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.my-4 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.login_body_bg {
+    background: url('../images//bg/1.jpg');
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    margin: 0; 
+    font-family: 'Federo', sans-serif;
+}
+
+.login_layout {
+    width: 400px;
+    height: 100vh; 
+    position: absolute;
+    right: 0; 
+    top: 0; 
+    background-color: rgba(0,113,189, 0.15);
+    background-image: url(../images/bg/login_layout_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+    box-shadow: -10px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.logo_div {
+    display: block;
+    padding: 4rem 0 2rem 0;
+    text-align: center; 
+}
+
+.reg_logo_div {
+    display: block;
+    padding: 3rem 0 0 0;
+    text-align: center; 
+}
+
+.logo_div img {
+    width: 180px;
+    height: auto;
+}
+
+.reg_logo_div img {
+    width: 180px;
+    height: auto;
+}
+
+.login_form_div {
+    padding: 20px; 
+}
+
+ 
+
+.form-group { 
+    margin-bottom: 1.5rem;  
+    width: 100%;
+}
+.form-group label {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+ 
+.form-control { 
+    width: 92%;
+    display: block; 
+    height: calc(1em + 0.5rem + 2px);
+    padding: 0.575rem 0.75rem 0.375rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #0072bc;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.login_btn {
+    width: 93%;
+    padding: 0.5rem 0.75rem;
+    font-size:1rem;
+    line-height: 1.5;   
+    font-weight: 600;
+    border-radius: 4px; 
+    text-transform: uppercase;
+    cursor: pointer;    
+    border: 0;
+    background: #0072bc;
+    color: #fff;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    box-shadow: 0px 1px 5px 0px hwb(204 0% 26%), 0px 2px 2px 0px rgb(0, 114, 188), 0px 3px 1px -2px rgb(0 0 0 / 12%);
+} 
+.login_btn:hover {
+    color: #000;
+    background-color: #f3c108;
+    border-color: #f3c108;
+    box-shadow: 0px 1px 5px 0px rgb(243, 193, 8), 0px 2px 2px 0px rgb(243, 193, 8), 0px 3px 1px -2px rgb(0 0 0 / 12%);
+}
+
+
+
+
+
+ 
+@media only screen and (max-width: 991px) {
+    .login_layout {
+        width: 100%; 
+    }
+}
