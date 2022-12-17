@@ -33,7 +33,7 @@
                 </div>  
 
                 <div class="form-group">
-                    <h3> Create a new account ? <a href="registration.html"> <strong> Registration now </strong></a> </h3>
+                    <h3> Create a new account ? <a href="registration.php"> <strong> Registration now </strong></a> </h3>
                 </div>  
             </form>
         </div> 

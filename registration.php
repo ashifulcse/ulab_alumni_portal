@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="form-group">
-                    <a class="login_btn" href="dashboard.html">Registration</a>
+                    <a class="login_btn" href="index.php">Registration</a>
                     <!-- <button type="submit" class="login_btn">Registration</button> -->
                 </div>  
             </form>

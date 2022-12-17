@@ -1,0 +1,25 @@
+
+
+.left_navber {
+    padding: 20px 26px;
+}
+
+.left_navber ul {
+    list-style: none;
+    background: #fff;
+    padding: 12px 20px;
+}
+.left_navber .active { 
+    color: rgb(11, 127, 236);
+}
+
+.left_navber ul li {
+    border-bottom: 1px solid #ddd;
+}
+.left_navber ul li:last-child {
+    border-bottom: none;
+}
+
+.left_navber ul li a{
+    text-align: left;
+}
