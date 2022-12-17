@@ -1,0 +1,47 @@
+.card {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .card div:first-child {
+    flex-basis: 35%;
+  }
+  
+  .card div:last-child {
+    flex-basis: 65%;
+    padding: 0 0.5rem 0.25rem;
+  }
+  
+  .card img {
+    display: block;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .card p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .shadow {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .border {
+    border: 1px solid #ddd;
+  }
+  
+  .curve {
+    border-radius: 0.35rem;
+  }
+   
+
+  .mb-3 {
+    margin-bottom: 1rem;
+  }

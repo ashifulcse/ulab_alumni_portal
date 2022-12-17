@@ -1,0 +1,40 @@
+.row {
+    width: 100%;
+    height: auto; 
+    display: flex;
+    padding-left: 16px; 
+    padding-right: 16px;
+}
+
+.col-md-12 {
+    width: 100%;
+    height: auto;
+}
+
+.col-md-8 {
+    width: 70%;
+    height: auto; 
+}
+
+.col-md-6 {
+    width: 50%;
+    height: auto;
+}
+
+.col-md-4 {
+    width: 30%;
+    height: auto;
+    padding: 0 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 2rem;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
