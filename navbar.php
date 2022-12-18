@@ -12,6 +12,16 @@
         <li><a href="notice.php">Notice</a></li>
         <li><a href="alumni_list.php">Alumni List</a></li>
         <li><a href="news.php">News & Events</a></li>  
-        <li><a href="login.php">Sign In</a></li> 
+
+        <!-- <li><a href="login.php">Sign In</a></li>  -->
+
+        <?php 
+            if(isset($_SESSION['login_user'])){ 
+                echo " <li> <a href='logout.php'>Logout</a> </li> ";
+            } else {
+                echo " <li> <a href='login.php'>Sign In</a> </li> ";
+            }
+        ?>
+  
     </ul>
 </div>

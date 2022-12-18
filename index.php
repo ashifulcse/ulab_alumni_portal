@@ -1,8 +1,29 @@
-<?php include 'header.php';?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> University Alumni Website </title>
+    <link rel="stylesheet" href="assets/css/theme.css"> 
+    <link rel="stylesheet" href="assets/css/dashboard.css"> 
+</head>
+
+<body>
+
+<div class="main_body">
+  
+<?php
+    include 'navbar.php';
+    include 'config.php';
+    $result = mysqli_query($db,"SELECT * FROM news");
+?> 
+
     <link rel="stylesheet" href="assets/css/news.css">
     <link rel="stylesheet" href="assets/css/alumni_list.css" />
     <div class="row" style="height:100%;">
-        <div class="col-md-8" style="height:100%; overflow-y: scroll;">
+        <div class="col-md-12" style="height:100%; overflow-y: scroll;">
 
             <h1 class="text-center"> Welcome to Ulab Alumni Portal </h1>
             <p>
@@ -15,60 +36,89 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-left"> New Alumni </h1>
+                    <h1 class="text-left"> Executive Committee </h1>
 
                     <div class="row" style="width: 98%;">
                         <div class="col-md-4">  
                             <article class="card border curve">
                                 <div>
-                                    <img src="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="image" />
+                                    <img src="https://us.123rf.com/450wm/apoev/apoev1903/apoev190300009/apoev190300009.jpg?ver=6" alt="image" />
                                 </div>
 
-                                <div>
-                                    <h3 class="mb-3"><strong>Ashiful Islam</strong></h3>
+                                <div class="my-3">
+                                    <h3 class="mb-0"><strong>Md. Zahidul Islam</strong></h3>
+                                    <p><strong>Advisor </strong></p>
+                                    
                                     <p>
-                                        01635-113737
+                                        zahidul.islam@ulab.edu.bd
                                     </p>
                                     <p>
-                                        ashiful@gmail.com
-                                    </p>
+                                        01711-0000000
+                                    </p> 
                                 </div>
                             </article>
                         </div>
+
                         <div class="col-md-4">  
                             <article class="card border curve">
                                 <div>
-                                    <img src="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="image" />
+                                    <img src="https://us.123rf.com/450wm/apoev/apoev1903/apoev190300009/apoev190300009.jpg?ver=6" alt="image" />
                                 </div>
 
-                                <div>
-                                    <h3 class="mb-3"><strong>Sazzadul Islam Shykat</strong></h3>
+                                <div class="my-3">
+                                    <h3 class="mb-0"><strong>Sazzadul Islam Shykat</strong></h3>
+                                    <p><strong>President</strong></p>
+                                    
                                     <p>
-                                        01635-113737
+                                        sazzadul.islam.cse@ulab.edu.bd
                                     </p>
                                     <p>
-                                        shykat@gmail.com
-                                    </p>
+                                        01616-498901
+                                    </p> 
                                 </div>
                             </article>
                         </div>
+
                         <div class="col-md-4">  
                             <article class="card border curve">
                                 <div>
-                                    <img src="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="image" />
+                                    <img src="https://us.123rf.com/450wm/apoev/apoev1903/apoev190300009/apoev190300009.jpg?ver=6" alt="image" />
                                 </div>
 
-                                <div>
-                                    <h3 class="mb-3"><strong>Shakil Ahmed</strong></h3>
+                                <div class="my-3">
+                                    <h3 class="mb-0"><strong>Abrar Mahbub</strong></h3>
+                                    <p><strong>Vice-President</strong></p>
+                                    
                                     <p>
-                                        01635-113737
+                                        abrar.mahbub.cse@ulab.edu.bd
                                     </p>
                                     <p>
-                                        ashiful@gmail.com
-                                    </p>
+                                        01711-000000
+                                    </p> 
                                 </div>
                             </article>
-                        </div> 
+                        </div>
+
+                        <div class="col-md-4">  
+                            <article class="card border curve">
+                                <div>
+                                    <img src="https://us.123rf.com/450wm/apoev/apoev1903/apoev190300009/apoev190300009.jpg?ver=6" alt="image" />
+                                </div>
+
+                                <div class="my-3">
+                                    <h3 class="mb-0"><strong>Rezwan Ahmed</strong></h3>
+                                    <p><strong>Secretary</strong></p>
+                                    
+                                    <p>
+                                        rezwan.ahmed.cse@ulab.edu.bd
+                                    </p>
+                                    <p>
+                                        01711-000000
+                                    </p> 
+                                </div>
+                            </article>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -77,94 +127,41 @@
                 <div class="col-md-12 mb-5">
                     <h1 class="text-left"> News & Events </h1> 
                     <main>
-                        <div class='news_card'> 
-                            <div class='module'>
-                                <div class='thumbnail'>
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg">
-                                <div class='date'>
-                                    <div>27</div>
-                                    <div>Mar</div>
-                                </div>
-                                </div>
-                                <div class='content'>
-                                <div class="category">Photos</div>
-                                <h1 class='title'>City Lights in New York</h1>
-                                <h2 class='sub-title'>The city that never sleeps.</h2>
-                                <div class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</div>
-                                <div class="meta">
-                                    <span class="timestamp">
-                                    <i class='fa fa-clock-o'></i> 6 mins ago
-                                    </span>
-                                    <span class="comments">
-                                    <i class='fa fa-comments'></i>
-                                    <a href="#"> 39 comments</a>
-                                    </span>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
+                    <?php
+                            $i=0;
+                            while($row = mysqli_fetch_array($result)) {
+                        ?>
 
-                        <div class='news_card'> 
-                            <div class='module'>
-                                <div class='thumbnail'>
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg">
-                                <div class='date'>
-                                    <div>27</div>
-                                    <div>Mar</div>
-                                </div>
-                                </div>
-                                <div class='content'>
-                                <div class="category">Photos</div>
-                                <h1 class='title'>City Lights in New York</h1>
-                                <h2 class='sub-title'>The city that never sleeps.</h2>
-                                <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
-                                <div class="meta">
-                                    <span class="timestamp">
-                                    <i class='fa fa-clock-o'></i> 6 mins ago
-                                    </span>
-                                    <span class="comments">
-                                    <i class='fa fa-comments'></i>
-                                    <a href="#"> 39 comments</a>
-                                    </span>
-                                </div>
+                            <div class='news_card'> 
+                                <div class='module'>
+                                    <div class='thumbnail'>
+                                        <img src="images/<?php echo $row['uploadfile']; ?>"> 
+                                    </div>
+                                    <div class='content'> 
+                                        <h1 class='title'><?php echo $row["title"]; ?></h1> 
+                                        <div class="description"><?php echo $row["decs"]; ?></div>
+                                        <div class="meta">
+                                            <span class="timestamp"> Date: 
+                                            <i class='fa fa-clock-o'></i> <?php echo $row["create_at"]; ?>
+                                            </span>
+                                            <br> 
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class='news_card'> 
-                            <div class='module'>
-                                <div class='thumbnail'>
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg">
-                                <div class='date'>
-                                    <div>27</div>
-                                    <div>Mar</div>
-                                </div>
-                                </div>
-                                <div class='content'>
-                                <div class="category">Photos</div>
-                                <h1 class='title'>City Lights in New York</h1>
-                                <h2 class='sub-title'>The city that never sleeps.</h2>
-                                <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
-                                <div class="meta">
-                                    <span class="timestamp">
-                                    <i class='fa fa-clock-o'></i> 6 mins ago
-                                    </span>
-                                    <span class="comments">
-                                    <i class='fa fa-comments'></i>
-                                    <a href="#"> 39 comments</a>
-                                    </span>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                            $i++;
+                            }
+                        ?> 
                     </main> 
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <?php include 'messages.php';?> 
-        </div>
+        <!-- <div class="col-md-4">
+            <?php // include 'messages.php';?> 
+        </div> -->
     </div>
   
  

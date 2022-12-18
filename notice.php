@@ -1,7 +1,7 @@
 <?php 
     include 'header.php';
 
-    $result = mysqli_query($db,"SELECT * FROM user");
+    $result = mysqli_query($db,"SELECT * FROM notice");
 ?>
 
 
@@ -9,22 +9,19 @@
        
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="alumni_list_table">
-                <h2 class="text-center">Blood List</h2>
+                <h2 class="text-center">Notice Board</h2>
 
                 <?php
                     if (mysqli_num_rows($result) > 0) {
                 ?>
 
-                <table>
+                <table class="text-left">
                     <tr>
                         <th>S.L</th>
-                        <th>Name</th>
-                        <th>Blood Group</th>
-                        <th>Phone</th>
-                        <th>Email</th>
-                        <th>Department</th>
+                        <th>Title</th> 
+                        <th>Description</th> 
                         <th>Date</th> 
                     </tr>
 
@@ -34,11 +31,8 @@
                     ?>
                         <tr>
                             <td><?php echo $i+1; ?></td>
-                            <td><?php echo $row["name"]; ?></td>
-                            <td><?php echo $row["blood"]; ?></td>
-                            <td><?php echo $row["phone"]; ?></td>  
-                            <td><?php echo $row["email"]; ?></td>  
-                            <td>CSE</td>
+                            <td><?php echo $row["title"]; ?></td>
+                            <td style="width: 60%;"><?php echo $row["description"]; ?></td> 
                             <td><?php echo $row["create_at"]; ?></td>  
                         </tr>
                     <?php
@@ -56,10 +50,7 @@
 
             </div>
         </div>
-
-        <div class="col-md-4">
-            <?php include 'messages.php';?> 
-        </div>
+ 
     </div>
  
    

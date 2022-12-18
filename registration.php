@@ -1,3 +1,5 @@
+ 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +19,7 @@
         </div>
 
         <div class="login_form_div"> 
-            <form> 
+            <form action="app/regApps.php" method="post"> 
                 <div class="form-group">
                     <label for="name">Full Name</label>
                     <input class="form-control" type="text" placeholder="Enter Full Name" name="name" required>
@@ -35,11 +37,17 @@
 
                 <div class="form-group">
                     <label for="psw">Password</label>
-                    <input class="form-control" type="password" placeholder="Enter Password" name="psw" required>
+                    <input class="form-control" type="password" placeholder="Enter Password" name="password" required>
                 </div>
 
                 <div class="form-group">
-                    <a class="login_btn" href="index.php">Registration</a>
+                    <label for="psw">Blood Group</label>
+                    <input class="form-control" type="text" placeholder="Enter Blood group" name="blood" required>
+                </div>
+
+                <div class="form-group">
+                    <input class="login_btn" type="submit" value="Registration" />
+                    <!-- <a class="login_btn" href="index.php">Registration</a> -->
                     <!-- <button type="submit" class="login_btn">Registration</button> -->
                 </div>  
             </form>

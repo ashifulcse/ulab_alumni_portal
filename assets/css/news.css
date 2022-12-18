@@ -28,8 +28,11 @@ main {
     overflow: hidden;
     background: black;
   }
+
+ 
   .thumbnail img {
     width: 120%;
+    height: 250px;
     transition: all 0.3s;
   }
   .module:hover .thumbnail img {

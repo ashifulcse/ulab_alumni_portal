@@ -30,6 +30,9 @@
 .text-center {
     text-align: center;
 }
+.text-left {
+    text-align: left;
+}
 
 .mt-5 {
     margin-top: 2rem;
@@ -37,4 +40,16 @@
 
 .mb-5 {
     margin-bottom: 5rem;
+}
+
+.my-3 {
+    padding: 15px 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+table, th, td { 
+    padding: 10px;
 }
